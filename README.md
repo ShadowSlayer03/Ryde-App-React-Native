@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# Ryde 🚗
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Ryde** is a mobile ride-hailing app built with **React Native** and **Expo**, designed to provide a seamless Uber-like experience. With real-time driver tracking, secure payments, and easy ride management, Ryde simplifies getting from one place to another.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Authentication**: Sign in or sign up with your email and password, or use Google login for quick access.
+- **Search for a Place**: Easily find your pickup and drop-off locations using the integrated search functionality.
+- **Real-time Driver Availability**: See nearby drivers in real time and select the one that suits you.
+- **Book a Ride**: Confirm your pickup and destination to book a ride instantly.
+- **Payment Integration**: Pay securely using **Stripe** for a smooth transaction process.
+- **Ride History**: View all your previous rides in one place for easy reference.
+- **Profile Page**: Manage your account information and view your ride statistics.
+
+## Tech Stack
+
+- **React Native**: Cross-platform mobile development.
+- **Expo**: Fast development and build tools.
+- **Clerk**: User authentication and session management.
+- **Zustand**: Lightweight state management.
+- **NeonDB (PostgreSQL)**: Database for managing user and ride data.
+- **Drizzle ORM**: Database queries and schema management.
+- **NativeWind**: Styling for React Native components with Tailwind-like utility classes.
+- **Stripe**: Secure and easy payment processing.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/ryde-app.git
+   cd ryde-app
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Set up environment variables:
+
+   Create a .env file at the root of your project and add your credentials for Clerk, Stripe, and Google API.
 
    ```bash
-    npx expo start
+   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=""
+   EXPO_PUBLIC_GOOGLE_API_KEY=""
+   EXPO_PUBLIC_STRIPE_PUBLISHABLE_API_KEY=""
+   EXPO_PUBLIC_GEOAPIFY_API_KEY=""
+   STRIPE_SECRET_KEY=""
+   DATABASE_URL=""
    ```
 
-In the output, you'll find options to open the app in a
+4. Run the app in development mode:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npm run start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Contributing
 
-## Get a fresh project
+1. Fork the repository.
 
-When you're ready, run:
+2. Create a new feature branch:
 
-```bash
-npm run reset-project
-```
+   ```bash
+   git checkout -b feature/your-feature
+   ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. Commit your changes:
 
-## Learn more
+   ```bash
+   git commit -m 'Add some feature'
+   ```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Push to the branch:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   ```bash
+   git push origin feature/your-feature
+   ```
 
-## Join the community
+5. Open a Pull Request.
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+
+
+
